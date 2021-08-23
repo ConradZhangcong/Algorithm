@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 var escapeGhosts = function (ghosts, target) {
-  if (target === [0, 0]) return true;
+  if (target[0] === 0 && target[1] === 0) return true;
 
   const dis = getDistance([0, 0], target);
 
