@@ -13,6 +13,3 @@ var isValid = function (s) {
 
   return s.length === 0;
 };
-
-
-console.log(isValid( "()"))
