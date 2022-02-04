@@ -1,8 +1,6 @@
 # 剑指 Offer 22. 链表中倒数第 k 个节点
 
-来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ## 思路 1
 
