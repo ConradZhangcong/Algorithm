@@ -1,11 +1,11 @@
-# leetcode每日一题
+# 算法
 
-打卡并且记录leetcode每日一题的答案与解题思路.
+## leetcode
 
-## 暂未解答
+打卡并且记录 leetcode 每日一题的答案与解题思路.
 
-2020-08-24  787
-2020-08-25  797
-2020-09-11
-2020-09-12  678
-2020-09-16  212
+[leetcode](https://leetcode-cn.com/)
+
+## 资料
+
+[极客时间 - 数据结构与算法之美](https://time.geekbang.org/column/intro/100017301)
