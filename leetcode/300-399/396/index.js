@@ -25,5 +25,3 @@ var maxRotateFunction = function (nums) {
 
   return ans;
 };
-
-console.log(maxRotateFunction([4, 3, 2, 6]));
