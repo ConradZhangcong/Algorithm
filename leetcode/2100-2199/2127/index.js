@@ -30,7 +30,7 @@ const maximumInvitations = (favorite) => {
     if (in_degree[i] === 0) continue;
     let j = favorite[i],
       cur = 1;
-    while (j !== 1) {
+    while (j !== i) {
       in_degree[j] = 0;
       j = favorite[j];
       cur++;
@@ -41,3 +41,5 @@ const maximumInvitations = (favorite) => {
 
   return Math.max(ans1, ans2);
 };
+
+console.log(maximumInvitations([1, 0, 0, 2, 1, 4, 7, 8, 9, 6, 7, 10, 8]))
