@@ -21,5 +21,8 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4"
   }
 }
