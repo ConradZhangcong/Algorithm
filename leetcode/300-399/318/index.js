@@ -3,30 +3,14 @@
  * @return {number}
  */
 var maxProduct = function (words) {
-  const isOverlap = (word, arr) => {
-    for (const w of word) {
-      if (arr[w.charCodeAt() - 97]) {
-        return true;
-      }
-    }
+  const length = words.length;
+  const masks = new Array(length).fill(0);
 
-    return false;
-  };
-
-  const sumList = [];
-
-  for (let i = 0; i < words.length; i++) {
-    const bitArr = new Array(26).fill(false);
-    for (const w of words[i]) {
-      bitArr[w.charCodeAt() - 97] = true;
-    }
-
-    for (let j = i + 1; j < words.length; j++) {
-      if (!isOverlap(words[j], bitArr)) {
-        sumList.push(words[i].length * words[j].length);
-      }
+  for (let i = 0; i < length; i++) {
+    const word = words[i];
+    const wordLength = word.length;
+    for (let j = 0; j < wordLength; j++) {
+      masks[i] |= 1 << (word[j].charCodeAt() - "a".charCodeAt());
     }
   }
-
-  return sumList.length === 0 ? 0 : Math.max(...sumList);
 };
