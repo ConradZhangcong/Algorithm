@@ -1,11 +1,5 @@
-const req = new Promise((resolve, reject) => {
-  resolve()
-})
+const isSomeType = (type) => (x) => Object.prototype.toString.call(x) === type
 
-req.then(() => {
-  console.error(111)
-  throw new Error('333')
-}).catch(err => {
-  console.log(err)
-  console.log('222')
-})
+const isString = isSomeType('[object String]')
+
+console.log(isString('112'))
