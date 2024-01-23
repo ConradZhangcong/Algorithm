@@ -1,5 +1,5 @@
-// 计算两点距离的平方
-const getD = ([a1, a2], [b1, b2]) => (b1 - a1) ** 2 + (b2 - a2) ** 2;
+/** 计算两点距离的平方 */
+const getDisPow2 = ([a1, a2], [b1, b2]) => (b1 - a1) ** 2 + (b2 - a2) ** 2;
 
 const numberOfBoomerangs = (points) => {
   // 肯定组成不了回旋镖
@@ -16,7 +16,7 @@ const numberOfBoomerangs = (points) => {
       // 排除与自身的点
       if (i !== j) {
         // 计算距离
-        const d = getD(a, b);
+        const d = getDisPow2(a, b);
         // 将距离保存
         map[a][d] = (map[a][d] || 0) + 1;
       }
